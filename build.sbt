@@ -4,6 +4,8 @@ lazy val GatlingTest = config("gatling") extend Test
 
 scalaVersion := "2.11.8"
 
+herokuAppName in Compile := "shielded-citadel-29262"
+
 libraryDependencies += "com.netaporter" %% "scala-uri" % "0.4.14"
 libraryDependencies += "net.codingwell" %% "scala-guice" % "4.1.0"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
